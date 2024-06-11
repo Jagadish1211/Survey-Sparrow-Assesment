@@ -28,6 +28,10 @@
     position: absolute;
     font-size: 18px;
     transform: translate(-50%);
+
+    @media(max-width: 768px) {
+        left: -100px;
+    }
 } 
 
 .graph-y-axis-values {
@@ -57,3 +61,14 @@
 .graph-y-axis-values.v50 {
     bottom: 500px;
 }
+
+@media only screen and (max-width: 840px) {
+.graph-box::before {
+    left: -90px;
+} 
+
+.graph-box::after {
+    left: 50%;
+
+} 
+  }
