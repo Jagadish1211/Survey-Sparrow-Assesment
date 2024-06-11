@@ -1,4 +1,4 @@
-import React  from "react";
+import React, {memo}  from "react";
 import "./styles.css";
 import RatingBar from "../RatingBar";
 
@@ -20,4 +20,4 @@ const GraphBox = ({ ratings }) => {
     </div>;
 };
 
-export default GraphBox;
+export default memo(GraphBox);
