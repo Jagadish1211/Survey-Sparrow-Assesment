@@ -1,0 +1,26 @@
+
+.rating-bar {
+    min-width: 25px;
+    background-color: lightgreen;
+    border: 1.5px solid lightgreen;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    transition: height 0.5s;
+    left: 50px;
+}
+
+.default-height {
+    height: 500px;
+    border: none;
+    width: 1px;
+}
+
+.rating-label {
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 14px;
+    color: white;
+}

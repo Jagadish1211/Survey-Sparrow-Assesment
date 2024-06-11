@@ -1,0 +1,10 @@
+
+.background {
+    background-color: transparent;
+    width: 50%;
+    height: auto;
+
+    @media(max-width: 768px) {
+        width: 85%;
+    }
+}

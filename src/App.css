@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -20,19 +21,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 24px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.generate-data-button {
+  margin-top: 50px;
+  background-color: transparent;
+  border: lightgreen 1px solid;
+  color: lightgreen;
+  padding: 10px 20px;
+  margin-left: 30%;
+  cursor: pointer;
 }

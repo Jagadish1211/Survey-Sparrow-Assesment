@@ -1,0 +1,59 @@
+.graph-box {
+    width: 80%;
+    height: 500px;
+    background-color: black;
+    margin: auto;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.graph-box::before {
+    content: "No. of ratings";
+    top: 50%;
+    left: -120px;
+    position: absolute;
+    font-size: 18px;
+    transform: rotate(-90deg);
+} 
+
+.graph-box::after {
+    content: "Ratings";
+    bottom: -60px;
+    left: 50%;
+    position: absolute;
+    font-size: 18px;
+    transform: translate(-50%);
+} 
+
+.graph-y-axis-values {
+    position: absolute;
+    left: -20px;
+    bottom: 100px;
+    color: white;
+    font-size: 14px;
+}
+
+.graph-y-axis-values.v10 {
+    bottom: 100px;
+}
+
+.graph-y-axis-values.v20 {
+    bottom: 200px;
+}
+
+.graph-y-axis-values.v30 {
+    bottom: 300px;
+}
+
+.graph-y-axis-values.v40 {
+    bottom: 400px;
+}
+
+.graph-y-axis-values.v50 {
+    bottom: 500px;
+}
