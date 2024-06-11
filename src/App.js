@@ -4,16 +4,25 @@ import './App.css';
 import Background from './Components/Background';
 import GraphBox from './Components/GraphBox';
 
+const ratingsData = {
+  1: 15,
+  2: 13,
+  3: 25,
+  4: 35,
+  5: 44
+};
+
+
 
 function App() {
-  const [dataset, setDataset] = useState([{rating : 15, key : 15}, {rating : 13, key : 13}, {rating : 25, key : 25}, {rating : 35, key : 35} , {rating : 44, key : 44}]);
+  const [dataset, setDataset] = useState(ratingsData);
 
   const RegenerateData = () => {
-    const arr = [];
-    for (let i = 0; i < 5; i++) {
-      arr.push({rating: Math.floor(Math.random() * 50), key: i+1});
+    const newDataset = {};
+    for (let i = 1; i <= 5; i++) {
+      newDataset[i] = Math.floor(Math.random() * 50);
     }
-    setDataset(arr);
+    setDataset(newDataset);
   }
 
   return (
